@@ -9,10 +9,10 @@ const App = () => {
     setUsersList((prev) => [...prev, { id: Math.random().toString(), name, age }]);
 
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </>
   );
 };
 
